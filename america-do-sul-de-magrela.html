@@ -52,6 +52,11 @@
             </ul>
         </p>
         <p>
+            <button class="btn btn-outline-primary" id="btnFotos">Fotos do caminho</button>
+            <button class="btn btn-outline-primary">Tabela com resumo diário</button>
+            <button class="btn btn-outline-primary">Mapa interativo</button>
+        </p>
+        <p>
             <img class="image-fluid mx-auto d-block" src="images/IMG_3335_03.jpg">
             <h6 class="text-center">Acampamento nos Aparados da Serra, Rio Grande do Sul</h6>
         </p>
@@ -181,3 +186,11 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>
+
+<script>
+    $(document).ready(function() {
+        $("#btnFotos").click(function(){
+            window.open('https://photos.google.com/album/AF1QipPcsMvOp7BQIbyAWtZzphbeCTylx6ZHJ86RNiuf');
+        });
+    });
+</script>
