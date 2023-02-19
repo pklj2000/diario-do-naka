@@ -55,7 +55,7 @@
         <p>
             <button class="btn btn-outline-primary" id="btnFotos">Fotos do caminho</button>
             <button class="btn btn-outline-primary" id="btnDadosDiario">Tabela com resumo diário</button>
-            <button class="btn btn-outline-primary">Mapa interativo</button>
+            <button class="btn btn-outline-primary" id="btnMapa">Mapa interativo</button>
         </p>
         <p>
             <img class="image-fluid mx-auto d-block" src="images/IMG_3335_03.jpg">
@@ -197,6 +197,10 @@
 
         $("#btnDadosDiario").click(function(){
             window.open('america-do-sul-diario.html');
+        });
+
+        $("#btnMapa").click(function(){
+            window.open('america-do-sul-mapa.html');
         });
 
     });
