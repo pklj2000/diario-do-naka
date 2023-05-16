@@ -148,3 +148,12 @@ h4 {
 p{
   padding-top: 15px;
 }
+
+.legenda{
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8em;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
