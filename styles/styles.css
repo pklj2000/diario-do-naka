@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}
+
 body, html {
    font-family: 'Roboto Slab', serif;
     margin: 0;
