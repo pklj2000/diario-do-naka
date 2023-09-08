@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Rubik:wght@600&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@300;500&family=Rubik:wght@600&display=swap" rel="stylesheet">
     </head>
     <body class="body-blog">
         <style>
@@ -17,40 +18,70 @@
                 font-family: 'Raleway', sans-serif;
                 padding-top: 15px;
                 color: #090909;
-                font-size: 1.3em;
+                font-size: 1.5em;
                 font-weight: 300;
             }
 
+            .container-fluid {
+              margin: 0px !important;
+              padding: 0px !important;
+            }
+
+            .chapter {
+            position: relative;
+            height: 900px;
+            z-index: 1;
+            overflow: hidden;
+            z-index: 1;
+            }
+
+            #chapter1 {
+            background-image: url("images/IMG_8395-capa.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center top;
+            }
+
+            .post-title {
+                position: absolute;
+                color: white;
+	            top: 135px;
+                left: 80px;
+                font-size: 60px;
+                font-weight: 500;
+                z-index: 88;
+                text-shadow: 0 0 10px #555555;
+            }
+            .post-sub-title {
+                position: absolute;
+                color: white;
+	            top: 220px;
+                left: 80px;
+                font-size: 28px;
+                font-weight: 500;
+                z-index: 88;
+                text-shadow: 0 0 10px #555555;
+            }
+            .post-chapter {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 42px;
+            }
         </style>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top autohide">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="../images/logo1.png" alt="Alessandro" width="40" height="40">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid" style="vertical-align:top;padding-bottom: 80px;">
+        <div id="chapter1" class="chapter">
         </div>
-      </nav>   
-      <div class="container-fluid" style="vertical-align:top;margin-top: 60px;padding-bottom: 80px;">
-        
-        <h1>América do Sul</h1>
-        <h4><small class="text-muted post">Pedalando 16.000km em 11 meses pelo Brasil, Argentina, Paraguai, Uruguai e Chile</small></h4>
-        <hr>       
-        <img class="image-fluid mx-auto d-block" src="images/IMG_0000.JPG">
+        <span class="post-title">América do Sul</span>
+        <span class="post-sub-title">16.000km | 11 meses | Brasil &bull; Argentina &bull; Paraguai &bull; Uruguai &bull; Chile</span>
+        <div class="container">
+        <span class="post-chapter">Resumo do caminho</span>
         <p class="text-muted post">
             Comecei o caminho em Pindamonhangaba-SP no dia 30 de abril de 2016 e terminei na cidade de Curitiba em março do ano seguinte.
         </p>
         <p class="text-muted post">
             A rota foi planejada tendo em mente que queria conhecer as Serras Catarinense e Gaúcha, ruínas Jesuítas, Buenos Aires, Mendoza, Santiago, Pucon, Bariloche, Carretera Austral, Glaciar Perito Moreno, Ushuaia. A partir daí tracei as estradas e cidades que iria passar. Esse é o tipo de viagem em que não há um destino: o caminho era o que buscava.
         </p>
+        <img class="image-fluid mx-auto d-block" src="images/IMG_0000.JPG">
         <p class="text-muted post">
             Fiz este caminho sozinho pois não é possível conseguir alguém disponível para uma empreitada dessa. Porém meu amigo Antonio Kolb pedalou comigo nos primeiros 8 dias. 
         </p>
@@ -420,6 +451,9 @@
             <h6 class="text-center">Laguna Esmeralda, Ushuaia, Argentina</h6>
         </p>
         <p class="text-muted post">
+            Em Ushuaia eu embarquei em um voo para Buenos Aires. A partir dai retornei para o Brasil seguindo o litoral
+        </p>
+        <p class="text-muted post">
             <img class="image-fluid mx-auto d-block" src="images/IMG_8870-02.jpg">
             <h6 class="text-center">Palacio Salvo na Praça da Independência, Montevideo, Uruguai</h6>
         </p>
@@ -464,6 +498,7 @@
             <h6 class="text-center">Curitiba - PR</h6>
         </p>
     </div>
+</div>
   </body>
 </html>
 
@@ -476,12 +511,7 @@
 	    width: 100%;
 	    z-index: 1030;
 	}
-	.scrolled-down{
-		transform:translateY(-100%); transition: all 0.3s ease-in-out;
-	}
-	.scrolled-up{
-		transform:translateY(0); transition: all 0.3s ease-in-out;
-	}
+	
     blockquote {border-left:darkblue 7px solid ;
         background:#eeeeee;
         color:#888888;
@@ -499,21 +529,6 @@
 
 <script>
     $(document).ready(function() {
-        var el_autohide = document.querySelector('.autohide');
-        var last_scroll_top;
-
-        window.addEventListener('scroll', function() {
-            let scroll_top = window.scrollY;
-		       if(scroll_top < last_scroll_top) {
-		            el_autohide.classList.remove('scrolled-down');
-		            el_autohide.classList.add('scrolled-up');
-		        }
-		        else {
-		            el_autohide.classList.remove('scrolled-up');
-		            el_autohide.classList.add('scrolled-down');
-		        }
-		        last_scroll_top = scroll_top;
-        });
 
         $("#btnFotos").click(function(){
             window.open('https://photos.google.com/album/AF1QipPcsMvOp7BQIbyAWtZzphbeCTylx6ZHJ86RNiuf');
