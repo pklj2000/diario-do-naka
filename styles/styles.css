@@ -120,7 +120,13 @@ border-bottom-right-radius: 12px;
     font-family: 'Roboto Slab', serif;
 }
 
-
+.card__italico{
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 300;
+  font-style: italic;
+  line-height: normal;
+}
 
 .card:hover .card__img--hover {
     height: 100%;
@@ -161,4 +167,9 @@ h4 {
   width: 100%;
   margin: auto;
   display: block;
+}
+
+.image-fluid{
+  max-width: 80%;
+  max-height: 500px;
 }
