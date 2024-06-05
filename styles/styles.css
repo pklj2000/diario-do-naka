@@ -29,6 +29,7 @@ body, html {
 
 .body-blog {
   justify-content: flex-start;
+  background-color:#eee;
 }
 
 .cards {
